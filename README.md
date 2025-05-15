@@ -1,59 +1,37 @@
-# EstoreAngular
+🏴‍☠️ OnePiece Figure Show Case
+📌 About the Project
+OnePiece Figure Shop is a mini web application that showcases and sells collectible figures from the One Piece anime series.
+Built with Angular, the app features a responsive layout, state management with Angular services, and fake APIs to simulate product data fetching.
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.12.
+🚀 Tech Stack
+Frontend: Angular
+State Management: Angular Services
+API: Simulated with in-memory/fake data
 
-## Development server
+🔧 Features
+✅ Browse One Piece anime figures
 
-To start a local development server, run:
+✅ View detailed figure information
 
-```bash
-ng serve
-```
+✅ Add figures to a cart (managed globally using services)
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+✅ Simulated API calls for product listing and details
 
-## Code scaffolding
+✅ Fully responsive design
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+📦 Installation & Setup
+Clone the repository
 
-```bash
-ng generate component component-name
-```
+Navigate to the project folder
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Run npm install
 
-```bash
-ng generate --help
-```
+Start the development server with ng serve
 
-## Building
+Open http://localhost:4200 in your browser
 
-To build the project run:
+👨‍💻 Author
+Tran Dinh Hieu (Wilson Tran) – Junior Frontend Developer passionate about building fun and engaging user interfaces with modern frameworks like Angular.
 
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+🚀 Preview
+![onepiece_figures](https://github.com/user-attachments/assets/5c5727a5-fea9-4deb-b53f-9fa6bd31a3e1)
