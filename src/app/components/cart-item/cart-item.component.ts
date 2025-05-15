@@ -1,6 +1,7 @@
-import { Component, input } from '@angular/core';
+import { Component, inject, input } from '@angular/core';
 import { IProduct } from '../../../models/products.model';
 import { PrimaryButtonComponent } from '../primary-button/primary-button.component';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-cart-item',
@@ -10,4 +11,10 @@ import { PrimaryButtonComponent } from '../primary-button/primary-button.compone
 })
 export class CartItemComponent {
   item = input.required<IProduct>();
+
+  cartService = inject(CartService);
+
+  removeFromCart(productId: number) {
+    this.cartService.removeFromCart(productId);
+  }
 }
