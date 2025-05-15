@@ -1,6 +1,7 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { IProduct } from '../../../models/products.model';
 import { ProductCardComponent } from '../../components/product-card/product-card.component';
+import { CartService } from '../../services/cart.service';
 @Component({
   selector: 'app-product-list',
   imports: [ProductCardComponent],
@@ -8,6 +9,11 @@ import { ProductCardComponent } from '../../components/product-card/product-card
   styleUrl: './product-list.component.css',
 })
 export class ProductListComponent {
+  cartService = inject(CartService);
+  ngOnInit() {
+    this.cartService.getAllProducts();
+  }
+
   products = signal<IProduct[]>([
     {
       id: 1,
