@@ -1,4 +1,5 @@
 🏴‍☠️ OnePiece Figure Show Case
+
 📌 About the Project
 OnePiece Figure Shop is a mini web application that showcases and sells collectible figures from the One Piece anime series.
 Built with Angular, the app features a responsive layout, state management with Angular services, and fake APIs to simulate product data fetching.
