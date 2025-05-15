@@ -4,8 +4,8 @@ import { Component, signal } from '@angular/core';
   selector: 'app-header',
   imports: [],
   templateUrl: './header.component.html',
-  styleUrl: './header.component.scss',
+  styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  title = signal<string>('My Shop');
+  title = signal<string>('My App');
 }
