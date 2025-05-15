@@ -1,5 +1,6 @@
-import { Component, signal } from '@angular/core';
+import { Component, inject, signal } from '@angular/core';
 import { PrimaryButtonComponent } from '../custom/primary-button/primary-button.component';
+import { CartService } from '../../services/cart.service';
 
 @Component({
   selector: 'app-header',
@@ -8,7 +9,5 @@ import { PrimaryButtonComponent } from '../custom/primary-button/primary-button.
   styleUrl: './header.component.css',
 })
 export class HeaderComponent {
-  greeting() {
-    console.log('Hello Wilson!!!');
-  }
+  cart = inject(CartService).cart;
 }
