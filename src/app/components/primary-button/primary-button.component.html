@@ -1,0 +1,11 @@
+<button
+  class="w-full border px-5 py-2 rounded-xl shadow-md hover:opacity-90 cursor-pointer"
+  [class]="
+    isPrimary() === true
+      ? 'bg-blue-500 text-white '
+      : 'text-black border-none hover:bg-blue-50'
+  "
+  (click)="btnClicked.emit()"
+>
+  {{ label() }}
+</button>

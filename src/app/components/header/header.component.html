@@ -1,4 +1,8 @@
 <div class="bg-slate-100 px-4 py-3 shadow-md flex justify-between items-center">
-  <span class="text-xl">One Piece</span>
-  <app-primary-button [label]="'Cart(' + cart().length + ')'" />
+  <button class="text-xl cursor-pointer" routerLink="/">One Piece</button>
+  <app-primary-button
+    [label]="'Cart(' + cart().length + ')'"
+    routerLink="/cart"
+    [isPrimary]="true"
+  />
 </div>
